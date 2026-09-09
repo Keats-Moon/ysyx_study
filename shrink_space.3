@@ -1,0 +1,31 @@
+.TH SHRINK_SPACE 3 "2026-07-03" "ysyx_E1_Project" "String Utilities"
+
+
+.SH NAME
+shrink_space \- remove whitespace characters from a string
+
+.SH SYNOPSIS
+.nf
+.B #include<string.h>
+.sp
+.BI char *shrink_space (char *dest, const char *src, size_t n)
+.fi
+
+.SH DESCRIPTION
+.B shrink_space()
+delete the pace and newilne
+from the src to the dest.
+
+.SH RETURN VALUE
+.B return a pointer to the dest
+
+.SH EXAMPLES
+.EX
+#include <stdio.h>
+
+char buf[32];
+char *s = "hello\\tworld\\n";
+
+shrink_space(buf, s, strlen(s));
+puts(buf);   /* prints: helloworld */
+.EE
