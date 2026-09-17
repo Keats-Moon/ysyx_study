@@ -1,1 +1,1 @@
-# ysyx_study
+# For submitting my "ysyx"study record  (\o/)
